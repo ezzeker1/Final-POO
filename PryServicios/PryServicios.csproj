@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A872E9E-FB42-4DD0-9C71-7AD420679F34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PryServicios</RootNamespace>
+    <AssemblyName>PryServicios</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion.Designer.cs">
+      <DependentUpon>Administracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adquisiciones.cs" />
+    <Compile Include="Comprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comprobante.Designer.cs">
+      <DependentUpon>Comprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalledeInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalledeInmueble.Designer.cs">
+      <DependentUpon>DetalledeInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalledeServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalledeServicio.Designer.cs">
+      <DependentUpon>DetalledeServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarInfoFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInfoFacturacion.Designer.cs">
+      <DependentUpon>ModificarInfoFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarMetodoPago.Designer.cs">
+      <DependentUpon>ModificarMetodoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RealizarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RealizarPago.Designer.cs">
+      <DependentUpon>RealizarPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesVehiculo.Designer.cs">
+      <DependentUpon>DetallesVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inmueble.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inmuebles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inmuebles.Designer.cs">
+      <DependentUpon>Inmuebles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuario.Designer.cs">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilUsuario.Designer.cs">
+      <DependentUpon>PerfilUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recibo.cs" />
+    <Compile Include="RegistrarInfoFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarInfoFacturacion.Designer.cs">
+      <DependentUpon>RegistrarInfoFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarMetodoPago.Designer.cs">
+      <DependentUpon>RegistrarMetodoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroUsuario.Designer.cs">
+      <DependentUpon>RegistroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestablecerPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestablecerPassword.Designer.cs">
+      <DependentUpon>RestablecerPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio.cs" />
+    <Compile Include="Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios.Designer.cs">
+      <DependentUpon>Servicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiciosGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiciosGeneral.Designer.cs">
+      <DependentUpon>ServiciosGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarjeta.cs" />
+    <Compile Include="Transaccion.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Validar.cs" />
+    <Compile Include="InfoFacturacion.cs" />
+    <Compile Include="Vehiculo.cs" />
+    <Compile Include="Vehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehiculos.Designer.cs">
+      <DependentUpon>Vehiculos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administracion.resx">
+      <DependentUpon>Administracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comprobante.resx">
+      <DependentUpon>Comprobante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalledeInmueble.resx">
+      <DependentUpon>DetalledeInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalledeServicio.resx">
+      <DependentUpon>DetalledeServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inmuebles.resx">
+      <DependentUpon>Inmuebles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInfoFacturacion.resx">
+      <DependentUpon>ModificarInfoFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarMetodoPago.resx">
+      <DependentUpon>ModificarMetodoPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealizarPago.resx">
+      <DependentUpon>RealizarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesVehiculo.resx">
+      <DependentUpon>DetallesVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarUsuario.resx">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilUsuario.resx">
+      <DependentUpon>PerfilUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarInfoFacturacion.resx">
+      <DependentUpon>RegistrarInfoFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarMetodoPago.resx">
+      <DependentUpon>RegistrarMetodoPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroUsuario.resx">
+      <DependentUpon>RegistroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestablecerPassword.resx">
+      <DependentUpon>RestablecerPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios.resx">
+      <DependentUpon>Servicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiciosGeneral.resx">
+      <DependentUpon>ServiciosGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehiculos.resx">
+      <DependentUpon>Vehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inmuebles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servicios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bugatti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercedez.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ninja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yaris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmw6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Services.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inmueble1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inmueble2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inmueble3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inmueble4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inmueble5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inmueble6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inmueble7.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
